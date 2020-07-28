@@ -5,7 +5,13 @@ form.addEventListener('submit', function (ev) {
     oReq.open("POST", "http://localhost:7071/api/FhirConverter/cda/ccd.hbs", true);
     oReq.onload = function (oEvent) {
         if (oReq.status == 200) {
-            AddLevel($("#resource"), "resource", JSON.parse(oReq.response).fhirResource);
+            //AddLevel($("#resource"), "resource", JSON.parse(oReq.response).fhirResource);
+            var fhirResources = SeparateResources(JSON.parse(oReq.response).fhirResource);
+            AddTabs("tabs", fhirResources);
+            for (const resourceType in fhirResources) {
+                AddSummary("resource", resourceType, fhirResources[resourceType], true);
+            }
+            
         } else {
             console.log("Error " + oReq.status + " occurred when trying to upload your file.<br/>");
         }
