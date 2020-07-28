@@ -1,0 +1,22 @@
+{
+  "name": "json-fhir-visualizer",
+  "version": "0.0.1",
+  "description": "Provides support for converting FHIR JSON data into a more human interactable format",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LTA-Thinking/fhir-visualizer.git"
+  },
+  "keywords": [
+    "FHIR"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LTA-Thinking/fhir-visualizer/issues"
+  },
+  "homepage": "https://github.com/LTA-Thinking/fhir-visualizer#readme"
+}
