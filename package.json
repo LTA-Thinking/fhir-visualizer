@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/LTA-Thinking/fhir-visualizer#readme",
   "dependencies": {
-    "codemirror": "^5.55.0"
+    "codemirror": "^5.58.2"
   }
 }
